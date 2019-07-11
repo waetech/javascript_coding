@@ -267,6 +267,69 @@ const sortedCompanies = companies.sort(function(company1, company2){
 console.log(sortedCompanies);
 
 
+let animals = [
+    {name: 'Fluffykins', species: 'rabbit'},
+    {name: 'Caro',       species: 'dog'},
+    {name: 'Hamilton',   species: 'dog'},
+    {name: 'Harold',     species: 'fish'},
+    {name: 'Ursula',     species: 'cat'},
+    {name: 'Jimmy',      species: 'fish'},
+    {name: 'Benny',      species: 'fish'},
+    {name: 'Tobias',     species: 'rabbit'}
+]
+
+let dogs = animals.filter(function(animal){
+    return animal.species === 'dog'
+});
+
+console.log(dogs);
+
+let fish = animals.filter(function(animal){
+    return animal.species === 'fish';
+});
+
+console.log(fish);
+
+
+animals.forEach(function(animal){
+    return animal.name, animal.species;
+});
+
+console.log(animals);
+
+
+//Map - transform the array
+var names = animals.map((animal) => animal.name)
+   console.log(names);
+
+ //foreach
+animals.forEach(function(animal){
+    return animal.name, animal.species;
+});
+
+console.log(animals);
+
+
+//Reduce
+var orders = [
+    {amount: 250},
+    {amount: 400},
+    {amount: 100},
+    {amount: 325}
+]
+
+
+var totalAmount = orders.reduce(function(sum, order){
+    return sum + order.amount;
+}, 0)
+
+console.log(totalAmount);
+
+
+
+
+
+
 
 
 
