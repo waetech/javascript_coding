@@ -326,6 +326,10 @@ var totalAmount = orders.reduce(function(sum, order){
 console.log(totalAmount);
 
 
+//Closures
+
+
+
 
 
 
