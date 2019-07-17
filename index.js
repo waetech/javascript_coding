@@ -326,7 +326,23 @@ var totalAmount = orders.reduce(function(sum, order){
 console.log(totalAmount);
 
 
-//Closures
+//var and let
+//var is function scope
+//let is block scope within the curly braces {}
+//const helps with efficiency and memory, never changes
+
+const cat = 99;
+const particle = {x: 100, y: 100};
+
+function go(){
+    return something;
+}
+
+const go = function() {
+    return 'Take 2 steps';
+}
+
+console.log(go);
 
 
 
